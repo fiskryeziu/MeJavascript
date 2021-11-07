@@ -1,0 +1,48 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    position: absolute;
+    top: 10%;
+
+}
+
+.searchbutton
+{
+    top: 25%;
+    position: absolute;
+}
+.section
+{
+    border: 1px solid rgb(216, 206, 206);
+    width:300px;
+    text-align:left;
+}
+ul li {
+    border-bottom: 1px solid rgb(216, 206, 206); 
+    padding: 3px;    
+    font-size: 18px;
+    color: #000;
+    font-weight: 300;
+    font-family: 'Montserrat';
+}
