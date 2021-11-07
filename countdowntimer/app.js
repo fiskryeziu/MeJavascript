@@ -23,6 +23,7 @@ function KoheMatsi()
 
     // console.log(SaSekonda , Ditet, Oret ,Minutat, Sekondat)
 }
+//me rregullu zeron 
 function RregulloZeron(koha)
 {
     return koha < 10 ? (`0${koha}`) : koha;
