@@ -4,12 +4,15 @@ const todoLista = document.querySelector('.todolista')
 const alerti = document.querySelector('.alert-popup')
 
 
-
+  //me shtu 
   klikoButton.addEventListener('click',addList)
+  //me fshi
+  todoLista.addEventListener('click', removeList)
 
 
 function addList(event)
-{if(inputiSheno.value == "")
+{
+  if(inputiSheno.value == "")
 {
     alerti.style.opacity = 1;
     setTimeout(() => document.querySelector('.alert-popup').style.opacity=0, 3000);
@@ -30,11 +33,11 @@ else
     divToDo.appendChild(todoLi)
 
     //buttoni check
-    const checkButtoni = document.createElement('button')
-    checkButtoni.innerHTML = '<i class="fas fa-check"></i>'
-    checkButtoni.classList.add('complete-btn')
+    // const checkButtoni = document.createElement('button')
+    // checkButtoni.innerHTML = '<i class="fas fa-check"></i>'
+    // checkButtoni.classList.add('complete-btn')
 
-    divToDo.appendChild(checkButtoni)
+    // divToDo.appendChild(checkButtoni)
 
     //buttoni delete
     const deleteButtoni = document.createElement('button')
@@ -48,4 +51,15 @@ else
     inputiSheno.value = ""
 
 }  
+}
+
+
+function removeList (e)
+{
+  const item  = e.target
+  if(item.classList[0] === 'delete-btn')
+  {
+    const todo = item.parentElement;
+    todo.remove();
+  }
 }
